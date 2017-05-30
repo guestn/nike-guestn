@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nike Test</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400italic,500,500italic,700,700italic">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_orange-pink.min.css" />
+		<style>
+			/* Obviously this would sit in a separate CSS file in real production app */
+			body {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			.mdl-textfield {
+				display:block
+			}
+			.results {
+				padding: 1em 0;
+			}
+			.spinner {
+				width: 32px;
+				height: 32px;
+				animation: spin 1s infinite;
+				border-radius: 50%;
+				border: 3px solid rgb(255,87,34);
+				border-left: 3px solid transparent;
+				margin: 0em auto;
+			}
+			.form-errors {
+				color: rgb(255,20,14);
+				padding: 0.5em 0;
+			}
+			@keyframes spin {
+				0%{
+					transform: rotate(0deg)
+				}
+				100% {
+					transform: rotate(360deg)
+				}
+			}
+			
+		</style>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+</head>
+
+<body>
+	<div id="appContainer"></div>
+	<script src="app.js"></script>
+</body>
+
+</html>
